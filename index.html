@@ -6,40 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Cycling | Landing Page</title>
+
+    <style>
+
+        body {
+            font-family: Helvetica, sans-serif;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 3vw;
+            margin-top: 15vh;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        p {
+            text-indent: 30px;
+        }
+
+        img {
+            padding: 0rem 3rem;
+        }
+
+        #header {
+            align-items: center;
+            background-color: black;
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #nav-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 4vh;
+        }
+
+        #nav-bar {
+            display: flex;
+            position: fixed;
+        }
+
+        #nav-bar li {
+            list-style: none;
+            margin: 1vw;
+        }
+
+        #nav-bar a {
+            color: white;
+            font-size: 2vw;
+            margin: 0 2vw;
+            text-decoration: none;
+
+        }
+
+        #video-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: center;
+        }
+
+        #email {
+            margin: 1rem auto;
+            width: 50%;
+        }
+
+        #submit {
+            background-color: black;
+            border: transparent;
+            border-radius: 8px;
+            color: white;
+            font-family: Helvetica, sans-serif;
+            font-size: 2vw;
+            padding: 0.5rem;
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        #submit:hover {
+            background-color: darkgrey;
+            color: black;
+            cursor: grab;
+            transition: 0.5s ease-in-out;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: green;
+            }
+        }
+    
+        @media screen and (max-width: 592px) {
+            body {
+                background-color: gold;
+            }
+            
+        }
+    </style>
 </head>
+
 <body>
 
 <header id="header">
 
-    <img id="header-img" src="bike-pngrepo-com.png" />
+    <img width="10%" height="auto" id="header-img" src="https://www.pngrepo.com/png/128281/512/bike.png" />
 
-    <nav id="navbar">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </nav>
+    <div id="nav-wrapper">
+        <nav id="nav-bar">
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#contact">Contact Us</a></li>
+        </nav>
+    </div>
+
 
 </header>
 
-<iframe
-id="video" 
-width="560" 
-height="315" 
-src="https://www.youtube.com/embed/jid1-eyqfyc" 
-title="YouTube video player" 
-frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+<h1>Bennett's Bicycles</h1>
 
-<form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email...">
-
-    <label for="submit">Submit:</label>
-    <input type="submit" name="submit" id="submit">
-</form>
+<div id="video-wrapper">
+    <iframe
+    id="video" 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/jid1-eyqfyc" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+</div>
 
 
+
+<div id="features">
+    <h2>Features</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+</div>
+
+<div id="pricing">
+    <h2>Pricing</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+    </p>
+</div>
+
+<div id="contact">
+    <h2>Contact Us</h2>
+
+    <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
+        <label for="email">Enter a valid email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email...">
+    
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+</div>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
