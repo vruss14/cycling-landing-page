@@ -12,13 +12,15 @@
         body {
             font-family: Helvetica, sans-serif;
             font-weight: 300;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
             font-weight: 500;
             font-size: 3vw;
-            margin-top: 15vh;
             text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         h2 {
@@ -43,16 +45,18 @@
             top: 0;
             left: 0;
             width: 100%;
+            height: 125px;
         }
 
         #nav-wrapper {
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            height: 4vh;
+            height: 5vh;
         }
 
         #nav-bar {
+            align-self: center;
             display: flex;
             position: fixed;
         }
@@ -64,16 +68,27 @@
 
         #nav-bar a {
             color: white;
-            font-size: 2vw;
+            font-size: 1.5vw;
             margin: 0 2vw;
             text-decoration: none;
 
+        }
+
+        .bike {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .bike-wrapper {
+            display: flex;
+            justify-content: center;
         }
 
         #video-wrapper {
             display: flex;
             justify-content: center;
             width: 100%;
+            margin-top: 125px;
         }
 
         form {
@@ -99,7 +114,7 @@
             font-size: 2vw;
             padding: 0.5rem;
             width: 25%;
-            margin: 0 auto;
+            margin: 1rem auto;
         }
 
         #submit:hover {
@@ -110,16 +125,31 @@
         }
 
         @media screen and (max-width: 768px) {
-            body {
-                background-color: green;
+            h1 {
+                font-size: 4vw;
+            }
+
+            h2 {
+                font-size: 3vw;
+            }
+
+            #nav-bar a {
+                font-size: 2vw;
             }
         }
     
         @media screen and (max-width: 592px) {
-            body {
-                background-color: gold;
+            h1 {
+                font-size: 4.5vw;
             }
-            
+
+            h2 {
+                font-size: 3.5vw;
+            }
+
+            #nav-bar a {
+                font-size: 2.5vw;
+            }
         }
     </style>
 </head>
@@ -128,7 +158,7 @@
 
 <header id="header">
 
-    <img width="10%" height="auto" id="header-img" src="https://www.pngrepo.com/png/128281/512/bike.png" />
+    <img width="10%" height="auto" id="header-img" src="https://www.pngrepo.com/png/128281/512/bike.png" alt="bike-logo" />
 
     <div id="nav-wrapper">
         <nav id="nav-bar">
@@ -141,14 +171,12 @@
 
 </header>
 
-<h1>Bennett's Bicycles</h1>
-
 <div id="video-wrapper">
     <iframe
     id="video" 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/jid1-eyqfyc" 
+    width="100%" 
+    height="568px" 
+    src="https://www.youtube.com/embed/MWyBgudQqsI?start=4&autoplay=1&mute=1"
     title="YouTube video player" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -156,10 +184,18 @@
     </iframe>
 </div>
 
-
+<h1>Bennett's Bicycles</h1>
 
 <div id="features">
     <h2>Features</h2>
+
+    <div class="bike-wrapper">
+        <img class="bike" 
+        width="15%" 
+        height="auto" 
+        src="https://www.pngrepo.com/png/128281/512/bike.png" />
+    </div>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -209,6 +245,13 @@
 <div id="pricing">
     <h2>Pricing</h2>
 
+    <div class="bike-wrapper">
+        <img class="bike" 
+        width="15%" 
+        height="auto" 
+        src="https://www.pngrepo.com/png/128281/512/bike.png" />
+    </div>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -256,6 +299,13 @@
 
 <div id="contact">
     <h2>Contact Us</h2>
+
+    <div class="bike-wrapper">
+        <img class="bike" 
+        width="15%" 
+        height="auto" 
+        src="https://www.pngrepo.com/png/128281/512/bike.png" />
+    </div>
 
     <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
         <label for="email">Enter a valid email:</label>
